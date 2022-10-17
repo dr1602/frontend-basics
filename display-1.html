@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            background: pink;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            /*es un bloque, lo afectan las características de tamaño y ancho*/
+        }
+        a{
+            background: orange;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            /*es inline, no lo afectan las características de tamaño ni de ancho*/
+        }
+        button{
+            background: purple;
+            width: 200px;
+            height: 200px;
+            /*se visualiza como inline pero tiene caraterísticas de bloque*/
+        }
+    </style>
+</head>
+<body>
+    <div>bloque</div>
+    <a href="/">inline</a>
+    <button>inline block</button>
+</body>
+</html>

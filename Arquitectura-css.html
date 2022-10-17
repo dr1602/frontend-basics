@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura CSS</title>
+    
+    <style>
+        body{
+            margin: 0;
+            background: burlywood;
+        }
+        .container {
+            grid-column: 1 / 2;
+            background-color: orange;
+            border-radius: 10px;
+            height: 50px;
+        }
+        .item {
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        .container .item:nth-child(2n+1) {
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Qué son y para qué nos sirven las arquitecturas CSS?</h1>
+    </div>
+    <div class="item">
+        <p>Sirven para mantener un orden y una coherencia durante todo el proyecto. Tiene los siguientes objetivos</p>
+        <li><b>Predecibles:</b> esscribir reglas claras.</li>
+        <li><b>Reutilizable:</b> no escribir código redundante.</li>
+        <li><b>Mantenible:</b> que sea fácil de leer y adaptable a los estándares.</li>
+        <li><b>Escalable:</b> que pueda crecer fácilmente sin afectar el rendimiento.</li>
+    </div>
+    <br>
+    <div class="item">
+        <p>Estos objetivos se deben ver reflejados en buenas prácticas que debe conocer todo el equipo involucrado en el proyecto como:</p>
+        <li>Establecer reglas</li>
+        <li>Explicar la estructura base</li>
+        <li>Establecer estándares de codificación</li>
+        <li>Evitar largas hojas de estilo</li>
+        <li>Documentación</li>
+    </div>
+</body>
+</html>
